@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recursos Exclusivos</title>
     <style>
-        body { font-family: 'Courier New', Courier, monospace; background: #1a1a1a; color: #fff; text-align: center; padding: 20px; }
-        .video-box { position:relative; padding-top:56.25%; margin: 50px 0; }
-        .video-box iframe { border:0; position:absolute; top:0; height:100%; width:100%; }
+        body { font-family: 'Courier New', Courier, monospace; background: #1a1a1a; color: #fff; text-align: center; padding: 20px; box-sizing: border-box; }
+        * { box-sizing: border-box; }
+        .video-box { position: relative; padding-top: 56.25%; margin: 50px 0; width: 100%; left: 0; }
+        .video-box iframe { border: 0; position: absolute; top: 0; left: 0; height: 100%; width: 100%; }
         .video-intro { margin: 30px 0 10px 0; font-size: 16px; color: #ccc; line-height: 1.6; }
-        .link-text { display: inline-block; margin-top: 30px; color: #e50914; text-decoration: underline; font-size: 16px; cursor: pointer; }
+        .link-text { display: inline-block; margin-top: 30px; color: #e50914; text-decoration: underline; font-size: 16px; }
         .link-text:hover { color: #ff4d4d; }
 
         @media (max-width: 600px) {
             .video-intro { font-size: 20px; }
             .link-text { font-size: 20px; }
+            body { padding: 10px; }
         }
     </style>
 </head>
